@@ -6,8 +6,8 @@ var puntosObjetivo=30;
 
 function sumarPuntos(){
  puntos++;
- document.getElementById("score").innerHTML= "PUNTOS: <b>"+puntos+ "/"+puntosObjetivo+"</b>";
- let ranNum= Math.round(Math.random()*500);
+ 
+ let ranNum= Math.round(Math.random()*500); // 
  let ranNum2= Math.round(Math.random()*500);
  document.getElementById("player").style.marginTop=ranNum+"px";
  document.getElementById("player").style.marginLeft=ranNum+"px";
@@ -18,6 +18,7 @@ function sumarPuntos(){
 
 function restarTiempo(){
     tiempo--;
+    document.getElementById("score").innerHTML= "PUNTOS: <b>"+puntos+ "/"+puntosObjetivo+"</b>";
     document.getElementById("time").innerHTML=" Tiempo: "+tiempo+ " ";
     if(tiempo==0){
         alert("Perdiste!");
@@ -26,4 +27,4 @@ function restarTiempo(){
     }
 }
 
-setTimeout(restarTiempo,500);
+setInterval(restarTiempo,500);
