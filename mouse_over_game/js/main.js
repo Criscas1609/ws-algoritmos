@@ -7,7 +7,7 @@ var puntosObjetivo=30;
 function sumarPuntos(){
  puntos++;
  
- let ranNum= Math.round(Math.random()*500); // 
+ let ranNum= Math.round(Math.random()*500); //Eso nos declara la variable y en cada ronda se actuliza y va sumando cada vez que el usuario gane
  let ranNum2= Math.round(Math.random()*500);
  document.getElementById("player").style.marginTop=ranNum+"px";
  document.getElementById("player").style.marginLeft=ranNum+"px";
