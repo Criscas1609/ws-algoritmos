@@ -11,7 +11,7 @@ alert(elementos.length+ " elementos de h2");
 //3. document.createElement(name)
 
 const crear1 = document.createElement("p");
-crear1.innerText = "Crear nuevo elemento";
+crear1.innerText = "Nuevo texto";
 document.body.appendChild(crear1);
 
 /* 4. parentNode.appendChild(node)  esta en el punto anterior*/
@@ -55,3 +55,5 @@ function Funcion20() {
     confirm("Acepta o cancela");
   }
 // 14. Arreglos: ForEach()
+let arreg =["papas","cebolla","sal","queso","salchicha","salsas"]
+alert(`Hay ${arreg.length} datos`)
