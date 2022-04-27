@@ -1,4 +1,4 @@
-/* solo me faltan 1 ejemplos y ya empiezo con el punto 4*/
+/* Todos los ejemplos terminados*/
 //1. En el HTML lo que va en el parrofo lo cambia por la palabra hola y el element.innerHTML
 
 var mensaje1= document.getElementById("P1").innerHTML= "Hola"
@@ -32,7 +32,11 @@ let marca = var2.getAttribute("target");
 document.getElementById("P5").innerHTML = marca;
 
 // 9. element.addEventListener
-
+let adicion= document.getElementById("add")
+adicion.addEventListener("click", nombre)
+function nombre(){
+  nom= prompt("Diga su nombre")
+}
 //10. window.scrollTo
 
 function scrollWin() {
@@ -58,5 +62,8 @@ function Funcion20() {
 // 14. Arreglos: ForEach()
 let arreg =["papas","cebolla","sal","queso","salchicha","salsas"]
 alert(`Hay ${arreg.length} datos`)
+arreg.forEach(function(comida){
+  alert(comida)
+  console.log(comida)
+});
 // fin ejemplos //
-
