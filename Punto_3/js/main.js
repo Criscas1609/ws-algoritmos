@@ -1,3 +1,4 @@
+/* solo me faltan 1 ejemplos y ya empiezo con el punto 4*/
 //1. En el HTML lo que va en el parrofo lo cambia por la palabra hola y el element.innerHTML
 
 var mensaje1= document.getElementById("P1").innerHTML= "Hola"
@@ -57,3 +58,5 @@ function Funcion20() {
 // 14. Arreglos: ForEach()
 let arreg =["papas","cebolla","sal","queso","salchicha","salsas"]
 alert(`Hay ${arreg.length} datos`)
+// fin ejemplos //
+
