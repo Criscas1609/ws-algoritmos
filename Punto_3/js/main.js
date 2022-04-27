@@ -58,4 +58,5 @@ function Funcion20() {
 // 14. Arreglos: ForEach()
 let arreg =["papas","cebolla","sal","queso","salchicha","salsas"]
 alert(`Hay ${arreg.length} datos`)
+// fin ejemplos //
 
