@@ -1,0 +1,10 @@
+h1{
+    font-size: 5cm;
+    font-weight: bold;
+    text-align: center;
+    background-color: blue;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
