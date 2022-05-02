@@ -2,6 +2,7 @@ let estudiantes = prompt("¿Cuantos estudiates hay?")
 let i=0
 const arregloNota =[i]
 const arregloEs =[i]
+
 //Pregunatr por estudiante y nota
 for(i=0; i<estudiantes; i++){
     let nombreE = prompt("Nombre del estudiante")
