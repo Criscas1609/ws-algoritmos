@@ -21,7 +21,7 @@ alert(`${var1} es la nota mas alta`)
 //Buscar nombre
 let busNom = prompt("¿Que nombre desea buscar?")
 let EncNom= arregloEs.find(busNom => Element=busNom)
-if(busNom==true){
+if(busNom==EncNom){
 alert(`Estudiante encontrado: ${EncNom}`)
 } else {
     alert("No se encontro al estudiante")
