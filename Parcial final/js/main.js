@@ -14,24 +14,36 @@ for(i=0; i<estudiantes; i++){
 }
 //Buscar nota mas alta
 let var1=0
+let cant=0
+let estudent=""
 for(i=0; i<estudiantes; i++){
-if(var1<arregloNota[i])
+if(var1<=arregloNota[i]){
 var1=arregloNota[i]
-alert(`${var1} es la nota mas alta`)
-}
+cant=cant+1
+estudent=estudent+" - "+arregloEs[i]
+}}
+alert(`${var1} es la nota mas alta y al obtubieron ${cant} estudiantes ${estudent}`)
 //Buscar nombre
+var3=0
+var4=0
 let busNom = prompt("¿Que nombre desea buscar?")
-let EncNom= arregloEs.find(busNom => Element=busNom)
-if(busNom==EncNom){
-alert(`Estudiante encontrado: ${EncNom}`)
-} else {
-    alert("No se encontro al estudiante")
-}
+for(i=0; i<estudiantes; i++){
+    if(arregloEs[i]==busNom){
+    var3=arregloEs[i]
+    var4=arregloNota[i]
+    }}
+    if(busNom==var3){
+    alert(`Estudiante encontrado: ${var3} y su nota es ${var4}`)
+    }else
+    alert("Estudiante no encontrado")
+
 //Promedio
 let var2=0
+parseInt
 let prom=0
 for(i=0; i<estudiantes; i++){
-var2 =var2+arregloNota[i]
+var2 =var2+parseInt(arregloNota[i])
 }
 prom =var2/estudiantes
 alert(`El promedio es ${prom}`)
+document.write(`El promedio es ${prom}`)
