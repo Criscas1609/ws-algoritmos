@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ="css/styless.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Inventario</title>
+
+</head>
+<body>
+    <h1>Inventario</h1>
+    <form>
+        <br>
+        <p id="NP">Agrege un nuevo producto</p>
+        <input id="nuevo producto"></input>
+        <p id="P$">Inserte su precio</p>
+        <input type="number" id="precio"></input>
+        <br>
+        <div class="cantidad">
+            <p>Cuantas unidades hay</p>
+            <label for="cantidad">Cantidad:</label>
+            <input name="cantidad" id="cantidad" class="input" type="number" min=1 max=50 required>
+            </div>
+        <br>
+        <div class="Categorias">
+            <p>Que categoria es:</p>
+            <input type="radio" name="categoria" id="juegos" value="juegos" checked><label for="small">Juegos</label>
+            <input type="radio" name="categoria" id="comida" value="comida"><label for="medium">Comida</label>
+            <input type="radio" name="categoria" id="otros" value="otros"><label for="big">Otros</label>
+    </div>
+        <br>
+        <div class="Agregar">
+            <p>Donde lo quieres poner:</p>
+            <input type="radio" name="agregar" id="comienzo" value="comienzo" checked><label for="comienzo"> Al comienzo</label>
+            <input type="radio" name="agregar" id="final" value="final"><label for="final"> Al final</label>
+    </div>
+    <br>
+        <button class="btn btn-primary" type="submit">Agregar producto</button>
+        <br>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
