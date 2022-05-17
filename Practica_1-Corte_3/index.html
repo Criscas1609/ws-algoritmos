@@ -13,8 +13,8 @@
     <h1>Inventario</h1>
     <form>
         <br>
-        <p id="NP">Agrege un nuevo producto</p>
-        <input id="nuevo producto"></input>
+        <p name="np" id="np" class="input" type="text">Agrege un nuevo producto</p>
+        <input id="nuevop"></input>
         <p id="P$">Inserte su precio</p>
         <input type="number" id="precio"></input>
         <br>
@@ -26,9 +26,9 @@
         <br>
         <div class="Categorias">
             <p>Que categoria es:</p>
-            <input type="radio" name="categoria" id="juegos" value="juegos" checked><label for="small">Juegos</label>
-            <input type="radio" name="categoria" id="comida" value="comida"><label for="medium">Comida</label>
-            <input type="radio" name="categoria" id="otros" value="otros"><label for="big">Otros</label>
+            <input type="radio" name="categoria" id="juegos" value="juegos" checked><label for="juegos">Juegos</label>
+            <input type="radio" name="categoria" id="comida" value="comida"><label for="comida">Comida</label>
+            <input type="radio" name="categoria" id="otros" value="otros"><label for="otros">Otros</label>
     </div>
         <br>
         <div class="Agregar">
@@ -37,7 +37,7 @@
             <input type="radio" name="agregar" id="final" value="final"><label for="final"> Al final</label>
     </div>
     <br>
-        <button class="btn btn-primary" type="submit">Agregar producto</button>
+        <button class="btn btn-primary" type="submit" onclick="captura()">Agregar producto</button>
         <br>
     </form>
     <script src="js/main.js"></script>
