@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>Inventario</h1>
-    <form>
+    <form id="save">
         <br>
         <p name="np" id="np" class="input" type="text">Agrege un nuevo producto</p>
         <input id="nuevop"></input>
@@ -24,7 +24,7 @@
             <input name="cantidad" id="cantidad" class="input" type="number" min=1 max=50 required>
             </div>
         <br>
-        <div class="Categorias">
+        <div class="categorias">
             <p>Que categoria es:</p>
             <input type="radio" name="categoria" id="juegos" value="juegos" checked><label for="juegos">Juegos</label>
             <input type="radio" name="categoria" id="comida" value="comida"><label for="comida">Comida</label>
@@ -37,9 +37,11 @@
             <input type="radio" name="agregar" id="final" value="final"><label for="final"> Al final</label>
     </div>
     <br>
-        <button class="btn btn-primary" type="submit" onclick="captura()">Agregar producto</button>
+        <button class="btn btn-primary" type="submit" onclick="captura()" id="guardar">Agregar producto</button>
         <br>
     </form>
+    <div class="imprimir arriba"></div>
+    <p id="p1"></p>
     <script src="js/main.js"></script>
 </body>
 </html>
