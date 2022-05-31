@@ -1,3 +1,5 @@
+let crear1 = document.createElement("p1");
+let parrafo = document.getElementById("p1")
 let h2 = document.getElementById("nom")
 if(localStorage.getItem("usuario")!=null){
     h2.innerHTML = ("Bienvenid@ "+localStorage.getItem("usuario"));
@@ -25,8 +27,7 @@ function captura (){
     let imprimir = imp()
 }
 function imp(){
-    let parrafo = document.getElementById("p1")
-    let crear1 = document.createElement("p1");
+
     crear1.innerText = 
     `
     ${arreglo[i]}
@@ -54,18 +55,19 @@ function boton_r (){
 //principio de la lista
 function comienzo(){
     arreglo.unshift(captura())
+    alert("Producto agregado con exito")
 }
 //final de la lista
 function final(){
     arreglo.push(captura())
+    alert("Producto agregado con exito")
 }
 //Total de productos por cantidad
+//Filter
 function pcategoria(){
 let buscarcat= prompt("Ingrese la categoria")
 let array= arreglo.filter(objecto => objecto.categoria == buscarcat)
 let totalcat=array.length
-let parrafo = document.getElementById("p1")
-let crear1 = document.createElement("p1");
 crear1.innerText = 
 `
 categoria encontrada ${buscarcat}
@@ -73,13 +75,13 @@ El total de la categoria es ${totalcat}
 `
 parrafo.appendChild(crear1)
 }
+//Total productos
+//forEach
 function tproductos(){
 let contador=0
 arreglo.forEach(objecto => {objecto.precio
     contador += objecto.precio
 })
-let crear1 = document.createElement("p1");
-let parrafo = document.getElementById("p1")
 crear1.innerText = 
 `
 todo el valor de los productos que hay en la tienda es de: ${contador}
@@ -110,8 +112,6 @@ function buscar(){
     precio: ${arreglo1000.precio}
     cantidad: ${arreglo1000.cantidad}
     `
-let crear1 = document.createElement("p1");
-let parrafo = document.getElementById("p1")
 crear1.innerText = 
 `
 ${cadena}
@@ -142,11 +142,11 @@ function alfa (){
         }
     })
    console.log(alfabe)
-   let crear1 = document.createElement("p1");
-let parrafo = document.getElementById("p1")
 crear1.innerText = 
 `
 ${alfabe}
 `
 parrafo.appendChild(crear1)
 }
+//Metodo .map
+let emojis = arreglo.map()
