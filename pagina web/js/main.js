@@ -150,3 +150,4 @@ parrafo.appendChild(crear1)
 }
 //Metodo .map
 let emojis = arreglo.map()
+//
