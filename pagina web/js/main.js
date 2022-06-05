@@ -148,6 +148,10 @@ ${alfabe}
 `
 parrafo.appendChild(crear1)
 }
+<<<<<<< HEAD
 //Metodo .map
 let emojis = arreglo.map()
 //
+=======
+//map
+>>>>>>> 13a91486a74413d52ad03b0452cdde7ae87c2c3a
