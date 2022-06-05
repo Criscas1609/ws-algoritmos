@@ -1,6 +1,6 @@
 let crear1 = document.createElement("p1");
-let parrafo = document.getElementById("p1")
-let h2 = document.getElementById("nom")
+let parrafo = document.getElementById("p1");
+let h2 = document.getElementById("nom");
 if(localStorage.getItem("usuario")!=null){
     h2.innerHTML = ("Bienvenid@ "+localStorage.getItem("usuario"));
   }
@@ -13,8 +13,8 @@ const arreglo=[]
 //Captura los datos
 function captura (){
     let producto = document.getElementById("nuevop").value
-    let precio = parseInt(document.getElementById("precio").value)
-    let cantidad = parseInt(document.getElementById("cantidad").value)
+    let precio = parseInt(document.getElementById("precio").value);
+    let cantidad = parseInt(document.getElementById("cantidad").value);
     let categoria = boton_r ()
     let objecto={
         "categoria": categoria,
@@ -24,16 +24,15 @@ function captura (){
     }
     return objecto
     //console.log(arreglo[i]["categoria"]);
-    let imprimir = imp()
 }
 function imp(){
 
     crear1.innerText = 
     `
-    ${arreglo[i]}
+    ${JSON.stringify(arreglo)}
     `
     parrafo.appendChild(crear1)
-    i++
+    
 }
 //Validar cual de las categorias selecciono
 function boton_r (){
@@ -56,11 +55,13 @@ function boton_r (){
 function comienzo(){
     arreglo.unshift(captura())
     alert("Producto agregado con exito")
+    let imprimir = imp()
 }
 //final de la lista
 function final(){
     arreglo.push(captura())
     alert("Producto agregado con exito")
+    let imprimir = imp()
 }
 //Total de productos por cantidad
 //Filter
@@ -148,10 +149,12 @@ ${alfabe}
 `
 parrafo.appendChild(crear1)
 }
-<<<<<<< HEAD
 //Metodo .map
-let emojis = arreglo.map()
-//
-=======
-//map
->>>>>>> 13a91486a74413d52ad03b0452cdde7ae87c2c3a
+function cambio(){
+let emojis = arreglo.map(buscar => buscar.categoria);
+for(let i=0; i>emojis.length-1; i++){
+    if(emojis[i]=="juegos")
+    emojis=
+}
+console.log(emojis)
+}
