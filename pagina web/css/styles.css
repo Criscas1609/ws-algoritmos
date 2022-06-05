@@ -1,44 +1,52 @@
-h1{
-    color: rgb(93, 189, 233);
-    text-align: center;
-}
-h2{
-    color: rgb(93, 189, 233);
-    text-align: center;
-}
-p{
-color: aliceblue;
-display: flex;
-  justify-content: center;
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-color: #ffffff; 
-font-size: 18px; 
-font-weight: 400; 
-text-align: center; 
-background: #889ccf; 
-margin: 0 0 25px; 
-overflow: hidden; 
-padding: 20px; 
-border-radius: 35px 0px 35px 0px; 
--moz-border-radius: 35px 0px 35px 0px; 
--webkit-border-radius: 35px 0px 35px 0px; 
-border: 2px solid #5878ca;
-}
-
-label{
-    display: inline-block;
-    width: 80px;
-    color: aliceblue;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-  }
-  .botones{
-    display: flex;
-    justify-content: center;
-    
-  }
-body{
-      background-image: url(https://c.tenor.com/knqFRdji8ucAAAAC/ocean-sea.gif);
-      background-size: cover;
+.titulo{
+  text-align: center;
+  color: aliceblue;
+  border: 10px solid;
+  background-image: url(https://c.tenor.com/knqFRdji8ucAAAAC/ocean-sea.gif);
+  background-size: cover;
   background-position: center center;
   background-blend-mode: darken;
+}
+.todo{
+  text-align: center;
+  color: aliceblue;
+  border: 10px solid;
+  background-image: url(https://data.whicdn.com/images/262087300/original.gif);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+  float: left;
+  width: 60%;
+  height: 550px;
+  
+}
+.parrafo{
+  float: right; 
+width: 40%;
+  height: 550px;
+  color: aliceblue;
+  border: 10px solid;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+  text-align: center;
+  padding: 200px 10px;
+}
+p1{
+  font-size: large;
+  
+}
+h3{
+  text-align: center;
+  color: aliceblue;
+  border: 10px solid;
+  background-color: black;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
+@media  screen and (max-width: 1000px){
+  body{
+      padding: 0;
+      width: auto;
   }

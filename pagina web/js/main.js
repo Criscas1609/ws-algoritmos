@@ -151,10 +151,21 @@ parrafo.appendChild(crear1)
 }
 //Metodo .map
 function cambio(){
-let emojis = arreglo.map(buscar => buscar.categoria);
-for(let i=0; i>emojis.length-1; i++){
-    if(emojis[i]=="juegos")
-    emojis=
+let remplazo = arreglo.map(buscar => buscar.categoria);
+crear1.innerText = 
+`
+En total hay ${remplazo.length} agregados
+`
+parrafo.appendChild(crear1)
 }
-console.log(emojis)
+//metodo reduce
+function reducir(){
+    let total_art = arreglo.reduce((contador,suma) =>{
+        return contador += suma.cantidad;
+},0);
+crear1.innerText = 
+`
+ En la tienda hay ${total_art} articulos
+`
+parrafo.appendChild(crear1)
 }
