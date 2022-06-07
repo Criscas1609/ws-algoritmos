@@ -1,3 +1,4 @@
+/*Parte negra de los subpaginas */
 * {
     margin:0px;
     padding:0px;
@@ -18,7 +19,7 @@ ul, ol {
 }
 
 .nav li a {
-    background-color:#000;
+    background-color:rgb(71, 135, 138);
     color:#fff;
     text-decoration:none;
     padding:10px 12px;
@@ -26,7 +27,7 @@ ul, ol {
 }
 
 .nav li a:hover {
-    background-color:#434343;
+    background-color:#475050;
 }
 
 .nav li ul {
@@ -46,4 +47,17 @@ ul, ol {
 .nav li ul li ul {
     right:-140px;
     top:0px;
+}
+/*Titulos*/
+h1{
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: overline;
+    font-weight: border;
+    color: aqua;
+    margin:auto;
+}
+/*Cuerpo de la pagina*/
+body{
+    background-color: #000;
 }
