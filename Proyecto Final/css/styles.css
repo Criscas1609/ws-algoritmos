@@ -61,3 +61,78 @@ h1{
 body{
     background-color: #000;
 }
+/*Pagina del menú*/
+.productos{
+    text-decoration:#f8f8f8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: rgba(0, 255, 255, 0.603);
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    display: flex;
+    
+}
+.sopas{
+    text-decoration:#f8f8f8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #002afa;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    text-align: center;
+}
+.sancocho{
+    text-decoration:#f8f8f8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #33b8c2;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+
+}
+.mondondo{
+    text-decoration:#f8f8f8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #33b8c2;
+    border-radius: 6px;
+    border: 2px solid #0016b0;   
+}
+.cajon_alineador_1{
+    display: flex;
+    justify-content: center;
+}
+.frijoles{
+    text-decoration:#f8f8f8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #33b8c2;
+    border-radius: 6px;
+    border: 2px solid #0016b0; 
+}
+.sopa_de_queso{
+    text-decoration:#f8f8f8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #33b8c2;
+    border-radius: 6px;
+    border: 2px solid #0016b0; 
+}
+/*Pagina de la mision*/
+
+mision{
+    color: aliceblue;
+    text-decoration: #fff;
+}
