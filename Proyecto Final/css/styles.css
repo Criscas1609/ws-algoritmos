@@ -109,6 +109,18 @@ body{
     display: flex;
     justify-content: center;
 }
+.cajon_alineador_2{
+    display: flex;
+    justify-content: center;
+}
+.cajon_alineador_3{
+    display: flex;
+    justify-content: center;
+}
+.cajon_alineador_4{
+    display: flex;
+    justify-content: center;
+}
 .frijoles{
     text-decoration:#f8f8f8;
     padding: 10px;
@@ -120,7 +132,7 @@ body{
     border: 2px solid #0016b0; 
 }
 .sopa_de_queso{
-text-decoration:#f8f8f8;
+    text-decoration:#f8f8f8;
     padding: 10px;
     font-weight: 600;
     font-size: 30px;
@@ -129,10 +141,50 @@ text-decoration:#f8f8f8;
     border-radius: 6px;
     border: 2px solid #0016b0; 
 }
-.cajon_alineador_2{
-    display: flex;
-    justify-content: center;
+.arroz_paisa{
+    text-decoration:#f8f8f8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #33b8c2;
+    border-radius: 6px;
+    border: 2px solid #0016b0; 
+    }
+.salmon{
+    text-decoration:#f8f8f8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #33b8c2;
+    border-radius: 6px;
+    border: 2px solid #0016b0; 
 }
+.churrasco{
+    text-decoration:#f8f8f8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #33b8c2;
+    border-radius: 6px;
+    border: 2px solid #0016b0;  
+}
+.bandeja_paisa{
+    text-decoration:#f8f8f8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #33b8c2;
+    border-radius: 6px;
+    border: 2px solid #0016b0; 
+}
+
+
+
+
 /*Pagina de la mision*/
 
 mision{

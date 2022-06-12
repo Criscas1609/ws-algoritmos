@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla"  />
+    <title>vanilla Javascript</title>
+    
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="container-fluid bg-dark position-sticky top-0">
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item text-primary" role="presentation">
+          <a
+            class="nav-link "
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Productos</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Carrito</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        1
+      </div>
+      <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <h2 class="h4 m-4 text-primary">Productos</h2>
+        <!-- Sancocho -->
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Sancocho</h5>
+              <img src="https://img.bekiacocina.com/cocina/0000/867-c.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">El sancocho es un guiso o estofado caldoso elaborado con carnes, tubérculos y verduras.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mondongo -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Mondongo</h5>
+              <img src="https://images.aws.nestle.recipes/resized/ecbd41cfa335aaf5f2fd95cca26d04ce_mondongo_708_600.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Es una sopa hecha de tripas en cubitos cocidos a fuego lento con verduras.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Frijoles -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Frijoles</h5>
+              <img src="https://t2.uc.ltmcdn.com/es/posts/8/1/4/como_hacer_frijoles_colombianos_31418_orig.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">El frijol es uno de los alimentos que contiene alto contenido de hierro y es muy versátil.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sopa de queso -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Sopa de queso</h5>
+              <img src="https://www.recetas-venezolanas.com/base/stock/Recipe/22-image/22-image_web.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Sopa a base de consomé de pollo, verduras y queso.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bandeja Paisa -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Bandeja Paisa</h5>
+              <img src="https://cdn.colombia.com/gastronomia/2011/08/02/bandeja-paisa-1616.gif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Salmon -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Salmon</h5>
+              <img src="https://www.elespectador.com/resizer/juhb5wOyzcM-tK9GyVvqXHq3a1o=/525x350/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/CZT2L7SIH5H3RJ5DH5JE2QHHVE.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Churrasco -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Churrasco</h5>
+              <img src="https://toromccoy.com/medellin/wp-content/uploads/2015/06/12-640x436.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Arroz paisa -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Arroz paisa</h5>
+              <img src="https://images.aws.nestle.recipes/resized/86a399d114e17217f76a4b3d9f250293_recetas_nestle_venezuela-arroz_paisa_sazonatodo_maggi_1200_600.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Chesse cake -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Chesse cake</h5>
+              <img src="https://t2.rg.ltmcdn.com/es/posts/1/4/9/cheesecake_de_frutos_rojos_73941_600_square.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Brownie con helado -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Brownie con helado</h5>
+              <img src="https://www.elespectador.com/resizer/ZR2qLpfQCGc4IC1X0lmdeAxTpHQ=/920x613/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/BS7XK3UP25GMJO3G5IXXDXCRCE.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Postre de limon -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Postre de limon</h5>
+              <img src="https://saltinnoel.com.co/wp-content/uploads/2017/07/receta-postre-de-limon-saltin-noel-semillas-y-cereales.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Torta de café -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Torta de café</h5>
+              <img src="https://d320djwtwnl5uo.cloudfront.net/recetas/cover/1bdd8a837944f3a10abc33eeb9a036f8_3_3_photo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Adicion de papas -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Porcion de papas</h5>
+              <img src="https://www.vidactual.com/rcpmaker/wp-content/uploads/2018/10/aFrench-Fries.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Adicion de arroz -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Porcion de arroz</h5>
+              <img src="https://www.hogarmania.com/archivos/202204/como-hacer-arroz-blanco-xl-1280x720x80xX.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Adicion de Ensalada -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Porcion de ensalda</h5>
+              <img src="https://www.laylita.com/recetas/wp-content/uploads/Ensalada-de-lechuga-con-limon-y-cilantro.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Adicion de Yuca -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Porcion de yucas</h5>
+              <img src="https://www.lavanguardia.com/files/image_449_220/uploads/2019/04/29/5e997bc150f6b.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Jugo de lulo -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Jugo de lulo</h5>
+              <img src="https://urbanorestaurante.com/101-home_default/jugo-de-lulo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Limonada de coco -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Limonada de coco</h5>
+              <img src="https://i.pinimg.com/736x/cf/f5/81/cff58118cace5fa4e725583da482067a.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Jugo de mango -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Jugo de mango</h5>
+              <img src="https://cdn.colombia.com/gastronomia/2011/08/03/jugo-de-mango-1610-1.gif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Jugo de guanabana -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Jugo de guanabana</h5>
+              <img src="https://mejorconsalud.as.com/wp-content/uploads/2014/06/guanabana.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+        
+          
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success">COMPRAR</button>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+    <footer class="bg-dark p-3 mt-5">
+      <p class="text-center m-0 text-muted">JSON DEV - VANILLA JAVASCRIPT</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
