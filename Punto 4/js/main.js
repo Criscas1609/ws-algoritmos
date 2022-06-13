@@ -3,10 +3,8 @@ addToShoppingCartButtons.forEach((addToCartButton) => {
   addToCartButton.addEventListener('click', addToCartClicked);
 });
 const descuento = document.getElementById("boton33")
-descuento.onclick=descuento1
-
 let rebaja = Math.floor((Math.random() * 4) + 1)*10;
-function descuento1(){
+descuento.onclick=(descuento1 => {
   alert(` Sorpresa Tienes ${rebaja}% en tu compra`)
 }
 
