@@ -23,7 +23,7 @@ function addToCarritoItem(e){
     img: itemImg,
     cantidad: 1
   }
-
+  
   addItemCarrito(newItem);
 }
 
