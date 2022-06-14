@@ -6,4 +6,3 @@ let button = document.querySelectorAll(`.button`);
     button.forEach(product => {
       product.addEventListener(`click`, addToObject)
     });
-//
