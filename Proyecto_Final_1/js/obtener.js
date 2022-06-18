@@ -16,15 +16,18 @@ export default function añadir_objeto(e){
     }
     añadir_al_carrito(objeto_articulo);
   }
+  // ciclo que mira si el producto esta repedido y no agregarlo 2 veces si no aumentar la cantidad
     function añadir_al_carrito(objeto_articulo){
-      carrito = carrito.filter((valor, indice) => {
-        return carrito.indexOf(valor) === indice;
-      })
+      for(let i =0; i < carrito.length ; i++){
+        if(carrito[i].Nombre.trim() === objeto_articulo.Nombre.trim()){
+          carrito[i].Cantidad ++;
+        }
+      }
       carrito.push(objeto_articulo);
-      console.log(carrito)
     mostrar_html(carrito)
-  //Con esta funcion nos muestra el producto en el apartado de carrito
-    
+    }
+  
+    //Con esta funcion nos muestra el producto en el apartado de carrito
   function mostrar_html(carrito){
         trbody_html.innerHTML=``;
         carrito.map(item =>{
@@ -46,5 +49,3 @@ export default function añadir_objeto(e){
             trbody_html.appendChild(new_tr)
         })
     }
-}
-    
