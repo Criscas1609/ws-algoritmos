@@ -75,6 +75,7 @@ export default function añadir_objeto(e){
       precio_total = precio_total + precio*item.Cantidad
       total_HTML.innerHTML = `Total $${precio_total}`
       añadir_al_localstorage()
+      guardar_info(carrito)
     })
     
   };
@@ -99,3 +100,14 @@ export default function añadir_objeto(e){
       }
     }
     
+    let url= "https://62a72da897b6156bff8967a6.mockapi.io/"
+    export function guardar_info(carrito){
+      fetch(url+"comida",{
+          method:'POST',
+          body:JSON.stringify(carrito),
+          headers:{
+              "Content-type":"application/json"
+          }
+      })
+      .then(response=>response.json());
+  }

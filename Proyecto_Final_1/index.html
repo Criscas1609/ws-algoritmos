@@ -66,6 +66,27 @@
             >Carrito</a
           >
         </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Carrito</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            type="button"
+            role="tab"
+            href="/Proyecto_Final_1/administrador/admin.html"
+            >Administrador</a
+          >
       </ul>
     </header>
 
@@ -416,14 +437,40 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                          <p name="np" id="np" class="input" type="text">Nombre</p>
-                          <input id="nuevop"></input>
-                          <p name="np" id="np" class="input" type="text">Correo</p>
-                          <input id="correo" type="email"></input>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        </div>
+                          <div class="container">
+                            <form action="" class="form" id="form" autocomplete="off">
+                              <p class="form-titulo">Datos del comprador</p>
+                              <div class="form-input myname">
+                                <input type="text" id="myname">
+                                <label for="myname">Nombre</label>
+                                <p class="mensajeError"></p>
+                              </div>
+                              <div class="form-input surname">
+                                <input type="text" id="surname">
+                                <label for="surname">Apellidos</label>
+                                <p class="mensajeError"></p>
+                              </div>
+                              <div class="form-input email">
+                                <input type="email" id="email">
+                                <label for="email">Correo electrónico</label>
+                                <p class="mensajeError"></p>
+                              </div>
+                              <div class="form-input mobile">
+                                <input type="text" id="mobile">
+                                <label for="mobile">Celular</label>
+                                <p class="mensajeError"></p>
+                              </div>
+                              
+                              <div class="form-termsAndConditions termsAndConditions">
+                                <input type="checkbox" id="termsAndConditions">
+                                <label for="termsAndConditions">He leído y acepto los </label>
+                                <a href="#">Términos y Condiciones</a>
+                                <p class="mensajeError"></p>
+                              </div>
+                              <div class="form-boton" >
+                                <input type="submit" id="añadir_api" value="Enviar">
+                              </div>
+                              <br>
                     </div>
                 </div>
             </div>
