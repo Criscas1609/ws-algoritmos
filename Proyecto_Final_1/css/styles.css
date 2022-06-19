@@ -4,6 +4,9 @@ body{
   header, .alert{
     z-index: 100;
   }
+  .contenido_home{
+    justify-content: center;
+  }
   .description{
     height: 25px;
     overflow: hidden;

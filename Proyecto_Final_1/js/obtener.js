@@ -22,6 +22,7 @@ export default function añadir_objeto(e){
     }
     alert("producto añadido")
     añadir_al_carrito(objeto_articulo);
+    guardar_info(objeto_articulo);
   }
   // ciclo que mira si el producto esta repedido y no agregarlo 2 veces si no aumentar la cantidad
     function añadir_al_carrito(objeto_articulo){
@@ -59,6 +60,7 @@ export default function añadir_objeto(e){
             `
             new_tr.innerHTML= content;
             trbody_html.append(new_tr)
+            // con estos botones se suma o se resta la cantidad y se actualiza el carrito
             new_tr.querySelector(".delete").addEventListener('click', quitar)
             new_tr.querySelector(".input__elemento").addEventListener('change', suma)
         })
@@ -75,7 +77,7 @@ export default function añadir_objeto(e){
       precio_total = precio_total + precio*item.Cantidad
       total_HTML.innerHTML = `Total $${precio_total}`
       añadir_al_localstorage()
-      guardar_info(carrito)
+      
     })
     
   };
@@ -83,11 +85,14 @@ export default function añadir_objeto(e){
     function quitar(e){
       const boton_borrar = e.target
       borrar_del_carrito(carrito,boton_borrar)
+      //Esta funcion esta en otro js
     }
+    //Con esta funcion se agrega al carrito mediante el comando de numeros
     function suma(e){
       let boton_suma = e.target
       console.log(boton_suma)
       aumento_existencia(carrito, boton_suma)
+      //Esta funcion esta en otro js
     }
     function añadir_al_localstorage(){
       localStorage.setItem('carrito', JSON.stringify(carrito))
