@@ -1,5 +1,5 @@
 body{
-    background-color: #110f0fea;
+    background-color: #2e0547;
   }
   header, .alert{
     z-index: 100;
@@ -41,5 +41,5 @@ body{
   }
   .card-img-top{
     height: 259px;
-    width: 259px;
+    width: 50% auto;
   }
